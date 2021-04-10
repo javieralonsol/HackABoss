@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+
+.item {
+    height: 300px;
+    width: 300px;
+    background-color: tomato;
+    margin: 0 auto;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    /* transition-delay: 1s; */
+}
+
+.item:hover {
+    background-color: aqua;
+}
+
+input {
+    width: 100px;
+    transition: width .5s;
+}
+
+input:focus {
+    width: 500px;
+    
+}

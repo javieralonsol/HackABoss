@@ -1,0 +1,13 @@
+div {
+    background-color: purple;
+}
+
+header {
+    height: 400px;
+    background-color: greenyellow;
+}
+span {
+    color: red;
+    font-family: cursive;
+    font-size: 30px;
+}

@@ -1,0 +1,66 @@
+@keyframes rotar {
+    0% {
+        /* border-right-color: pink; */
+        transform: rotate(0deg);
+    }
+    50% {
+        /* border-right-color: pink; */
+        /* border-top-color: pink; */
+    }
+    100% {
+        /* border-right-color: pink; */
+        /* border-top-color: pink; */
+        /* border-left-color: pink; */
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes imagen {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);       
+    }
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    background-color: rgb(247, 247, 165);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("../media/github.png"); */
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    border: 10px solid navy;
+    border-bottom-color: transparent;
+    border-radius: 150%;
+    /* animation-name: rotar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    animation: rotar 1s linear infinite
+}
+
+img {
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    /* animation-name: imagen;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    animation: imagen 1.5s linear infinite;
+}

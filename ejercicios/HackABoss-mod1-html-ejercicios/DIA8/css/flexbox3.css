@@ -1,0 +1,24 @@
+#container {
+    border: 3px solid orange;
+
+    height: 300px;
+
+    width: 500px;
+
+    display: flex;
+
+    /* overflow: auto; */
+}
+
+.item {
+    background-color: green;
+    flex: 0 1 auto; /*por defecto*/
+    flex: 0 1 100px;
+}
+
+.item:nth-child(even) {
+    background-color: purple;
+    flex: 0 1 auto; /*por defecto*/
+    flex: 1 1 100px;
+
+}

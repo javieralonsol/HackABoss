@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+span {
+    position: relative;
+}
+
+.hover::before,
+.hover::after {
+    opacity: 0;
+    position: absolute;
+    transition: opacity .3s, transform .3s cubic-bezier(0, 0.44, 0.57, 1.6);
+}
+
+.hover::before {
+    border: 10px solid transparent;
+    border-right-color: #000;
+    content: "";
+    height: 0;
+    left: 100%;
+    top: 5%;
+    width: 0;
+}
+
+.hover::after {
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px 0px #888;;
+    color: #fff;
+    content: attr(data-tooltip);
+    left: calc(100% + 20px);
+    padding: 15px;
+    top: -15px;
+    transform: scale(.25) rotate(-180deg);
+    white-space: nowrap;
+    transform-origin: left;
+}
+
+.hover:hover::before,
+.hover:hover::after {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+}

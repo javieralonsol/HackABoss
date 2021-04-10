@@ -1,0 +1,78 @@
+#contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#uno {
+    background-color: violet;
+    flex: 1 0 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    order: -2;
+}
+
+#dos {
+    background-color: pink;
+    height: 350px;
+    flex: 1 0 100%;
+    margin-bottom: 5px;
+}
+
+#tres,
+#cuatro,
+#cinco {
+    background-color: violet;
+    flex: 1 0 100%;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+#cinco {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    #uno {
+        height: 130px;
+    }
+
+    #tres,
+    #cuatro {
+        flex: 1 0 40%;
+        height: 175px;
+    }
+  
+    #tres {
+        margin-right: 5px;
+    }
+  
+    #tcuatro {
+        margin-left: 5px;
+    }
+
+}
+
+@media (min-width: 700px) {
+    #uno {
+        height: 205px;
+    }
+
+    #dos {
+        flex: 1 1 45%;
+    }
+
+    #tres {
+        order: -1;
+        flex: 1 1 20%;
+        height: 350px;
+    }
+
+    #cuatro {
+        flex: 1 1 20%;
+        height: 350px;
+
+    }
+    #cinco {
+        display: block;
+    }
+}

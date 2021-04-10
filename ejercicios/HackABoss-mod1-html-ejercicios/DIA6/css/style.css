@@ -1,0 +1,129 @@
+
+
+body,
+a {
+    background-color: #000;
+    color: #fff;
+}
+
+.formulario h1,
+.formulario h2 {
+    text-align: center;
+
+}
+.formulario h2 {
+    font-size: 16px;
+}
+
+.formulario form {
+    width: 80%;
+    margin: auto;
+}
+
+.formulario .minilinea {
+    border-bottom: 1px solid white;
+    margin: 30px auto;
+    width: 40px;
+}
+
+.formulario input,
+.formulario textarea {
+    background-color: #000;
+    border: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: -1px;
+    padding: 10px;
+    width: 100%;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    outline: 0;
+}
+.formulario > form > div {
+    border-bottom: 1px solid white;
+    padding: 10px 0 0 8px;
+}
+.formulario > form > div > div {
+    white-space: nowrap;
+}
+.formulario > form > div > div::before {
+    font-family: fontawesome;
+    content: "\f007";
+    color: #fff;
+    margin-top: 5px;
+}
+
+.formulario textarea {
+    vertical-align: -75px;
+}
+
+.formulario > form > div > textarea::before {
+    margin-top: 5px;
+}
+
+.formulario > form > div > .ciudad::before {
+    content: "\f041";
+}
+
+.formulario > form > div > .telefono::before {
+    content: "\f095";
+}
+
+.formulario > form > div > .email::before {
+    content: "\f1fa";
+}
+
+.formulario > form > div > .mensaje::before {
+    content: "\f075";
+}
+
+.formulario input[type="checkbox"] {
+    background-color: #000;
+    background: #000;
+    color: red;
+    width: auto;
+    border: 0;
+    display: none;
+}
+
+.formulario > form > div:nth-of-type() {
+    border: 0;
+}
+
+.formulario input[type="submit"] {
+    background-color: #009bda;
+    margin-top: 20px;
+    border: 0;
+    font-size: 25px;
+    transition: transform .4s;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    transform: scale(.95);
+}
+
+#pru {
+    border: 0;
+}
+
+#pru label::before {
+    font-family: fontawesome;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #fff;
+    content: "\00a0";
+    display: inline-block;
+    /* vertical-align: -5px; */
+    line-height: 20px;
+    padding: 2px;
+}
+
+#pru input:checked + label::before {
+    content: "\f00c"
+}
+

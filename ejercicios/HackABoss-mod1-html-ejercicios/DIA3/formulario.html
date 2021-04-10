@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="my-url" method="POST">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="nombre">Nombre: *</label>
+                <input required type="tel" name="nombre" id="nombre" placeholder="inserta tu nombre" />
+            </p>
+            <p>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" name="apellidos" id="apellidos" disabled />
+            </p>
+            <p>
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" />
+            </p>
+            <p>
+                <label for="dni">DIN:</label>
+                <input type="text" name="dni" id="dni" placeholder="xxxxxxxx-X" />
+            </p>
+            <p>
+                <label for="foto">Foto de perfil:</label>
+                <input type="file" name="foto" id="foto" />
+            </p>
+            <p>
+                <input type="submit" />
+                <input type="reset" />
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

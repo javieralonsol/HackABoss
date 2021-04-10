@@ -1,0 +1,189 @@
+/* común */
+    body {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    a {
+        color: #5b5959;;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #8c8a8a;
+    }
+
+/* header */
+    header {
+        background-color: #f7f7f7;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    header > .linea-verde {
+        background-color: rgb(0,99,65);
+        height: 10px;
+        flex: 1 0 100%;
+    }
+
+    header > a {
+        flex: 0 0 50px;
+        /* height: 50px; */
+        padding: 15px 20px 12px;
+        outline: 1px solid blue;
+        /* width: 50px; */
+    }
+
+    header > a > img {
+        width: 100%;
+        height: auto;
+    }
+
+    header > .arriba {
+        outline: 1px solid red;
+        flex: 1 0 75%;
+    }
+
+    header > .arriba > a {
+        outline: 1px solid pink;
+    }
+
+    header > .arriba img {
+        vertical-align: bottom;
+        padding-right: 8px;
+    }
+
+    header > .arriba > .location,
+    header > .arriba > .burger {
+        outline: 1px solid orange;
+        flex: 1 0 75%;
+        /* padding: 20px 30px 0 0; */
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 50%;
+    }
+
+    header > .arriba > .location {
+        padding-right: 36px;
+        visibility: hidden;
+    }
+
+    header > .arriba > .burger {
+        padding-right: 11px;
+    }
+
+    header > .arriba > .burger > a {
+        padding: 9px;
+    }
+
+    header > .arriba > .burger > a > img {
+        padding-right: 6px;
+        vertical-align: -1px;
+    }
+
+    header > .arriba > .burger > a > span {
+        background: #006341;
+        display: inline-block;
+        height: 20px;
+        position: relative;
+        width: 20px;
+    }
+
+    header > .arriba > .burger > a:hover > span {
+        background: #338267;
+    }
+
+    header > .arriba > .burger > a > span::before,
+    header > .arriba > .burger > a > span::after {
+        background: #f7f7f7;
+        content: '';
+        height: 20%;
+        left: 0;
+        position: absolute;
+        top: 20%;
+        transition: all ease .2s;
+        width: 100%;
+    }
+
+    header > .arriba > .burger > a > span::after {
+        top: 60%;
+    }
+
+    header > nav > ul {
+        display: flex;
+        flex-flow: row wrap;
+        list-style: none;
+        margin: 5px;
+        padding-left: 10px;
+    }
+
+    header > nav > ul > li {
+        margin: 0;
+    }
+ 
+    header > nav > ul a {
+        display: inline-block;
+        padding: 9px 8px;
+        letter-spacing: 2.52px;
+    }
+  
+    header > nav > ul a:hover {
+        background-color: #000;
+    }
+
+/* main */
+    main .article-1 > a {
+        display: block;
+        background-image: url("../media/bloque1.jpg");
+        background-size: auto 675px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 675px;
+    }
+
+/* responsive */
+    @media (min-width: 768px) {
+
+        header > a {
+            flex: 0 0 60px;
+        }    
+
+        header > .arriba > .location {
+            visibility: visible;;
+        }
+
+        header > .arriba > .burger {
+            visibility: hidden;;
+        }
+
+        header > nav > ul {
+            display: flex;
+            flex-flow: row wrap;
+            list-style: none;
+            margin: 5px;
+            padding-left: 10px;
+        }
+    
+        header > nav > ul > li {
+            margin: 0;
+        }
+     
+        header > nav > ul a {
+            display: inline-block;
+            padding: 9px 8px;
+            letter-spacing: 2.52px;
+        }
+      
+        header > nav > ul a:hover {
+            background-color: #000;
+        }
+
+        main .article-1 > a {
+            background-image: url("../media/bloque1-gr.jpg");
+            background-size: auto 100%;
+        }
+    
+       }

@@ -1,0 +1,89 @@
+.container {
+    color: #fff;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "menu"
+        "hero"
+        "main"
+        "banner"
+        "extra"
+        "image";
+   grid-template-columns: 100%;
+   grid-template-rows: 50px 50px 125px 125px 100px 100px 100px;
+}
+
+.container > div {
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: navy;
+    grid-area: header;
+}
+
+.menu {
+    background-color: red;
+    grid-area: menu;
+}
+
+.hero {
+    background-color: rgb(10, 131, 212);
+    grid-area: hero;
+}
+
+.main {
+    background-color: navy;
+    grid-area: main;
+}
+
+.banner {
+    background-color: yellow;
+    grid-area: banner;
+}
+
+.extra {
+    background-color: green;
+    grid-area: extra;
+}
+
+.image {
+    background-color: cornflowerblue;
+    grid-area: image;
+}
+
+@media (min-width:600px) {
+    .container {
+        grid-template-columns: 25% auto 25%;
+        grid-template-areas:
+            "header header header"
+            "hero hero hero"
+            "menu main main"
+            "menu banner banner"
+            "menu extra image";
+            grid-template-rows: 50px 200px 200px 100px 100px 100px 100px;
+        }
+}
+
+
+@media (min-width:900px) {
+    .container {
+        grid-template-areas:
+            "header menu menu menu"
+            "hero hero hero hero"
+            "main main . image"
+            "main main . extra"
+            "banner banner banner banner";
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 50px 300px 100px 100px 100px 100px 100px;
+    }
+
+    .hero {
+        /* height: 300px; */
+    }
+}

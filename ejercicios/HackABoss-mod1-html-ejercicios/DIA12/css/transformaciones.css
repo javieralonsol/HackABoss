@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+.container {
+    background-color: tomato;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color:aqua;
+    transition: .5s
+}
+
+.mover:hover {
+    transform: translate(16px, 24px);
+}
+
+.aumentar:hover {
+    transform: scale(3);
+}
+
+.rotar:hover {
+    transform: rotate(360deg) scale(.8);
+}

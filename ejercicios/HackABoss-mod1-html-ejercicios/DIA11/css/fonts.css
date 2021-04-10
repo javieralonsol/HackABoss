@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "Goldman";
+    font-weight: 300;
+    src: url("../fonts/Goldman/Goldman-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Goldman";
+    font-weight: bold;
+    src: url("../fonts/Goldman/Goldman-Bold.ttf") format("truetype");
+}
+
+#seccion1 {
+    font-family: "Xanh Mono", sans-serif;
+}
+
+#seccion2 {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+}

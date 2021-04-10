@@ -1,0 +1,239 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  min-width: 43rem;
+  padding: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* HEADER */
+header {
+  align-items: center;
+  background-color: #555;
+  border-bottom: 0.3125rem solid #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+header > div {
+  flex: 1 1;
+}
+
+header a {
+  color: #eee;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+header a.active {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+header h1,
+header h2 {
+  margin: 0.125rem 0.625rem;
+  padding: 0;
+}
+
+header ul {
+  flex: 0 1;
+  padding: 0 0.625rem;
+  text-align: right;
+}
+
+header ul li {
+  display: inline;
+  padding: 0 0.625rem;
+}
+
+/* MAIN */
+main {
+  display: flex;
+}
+
+aside {
+  background-color: #eee;
+  border-right: 0.0625rem solid #777;
+  padding: 1.25rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+aside li {
+  display: inline;
+  margin: 0 0.3125rem;
+}
+
+main > aside > img {
+  border: 0.0625rem solid #ccc;
+  border-radius: 6.25rem;
+}
+
+main > div {
+  flex: 1 1;
+}
+
+main > div h2 {
+  margin-bottom: 0;
+}
+
+main ul li ul li a::before {
+  content: '٭';
+  display: inline-block;
+  margin-right: 0.1875rem;
+  height: 1.4375rem;
+  width: 1.4375rem;
+}
+
+main ul li:nth-child(1) ul li a:hover::before {
+  content: '🍔';
+}
+
+main ul li:nth-child(2) ul li a:hover::before {
+  content: '🎥';
+}
+
+main ul li:nth-child(3) ul li a:hover::before {
+  content: '🎶';
+}
+
+main ul li:nth-child(4) ul li a:hover::before {
+  content: '🐕';
+}
+
+main table {
+  border-collapse: collapse;
+}
+
+main table th {
+  background-color: #555;
+  color: #fff;
+}
+
+main table th,
+main table td {
+  border: 0.0625rem solid #000;
+  padding: 0 0.3125rem;
+  text-align: center;
+}
+
+main table td:nth-child(2n + 1) {
+  background-color: #ddd;
+}
+
+section {
+  text-align: center;
+}
+
+section h1 {
+  font-size: 2.25rem;
+}
+
+section table {
+  margin: auto;
+}
+
+/* FORM */
+fieldset {
+  margin: auto;
+  width: 24rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.3125rem;
+  text-align: right;
+}
+
+input,
+textarea {
+  border: 0.09rem solid #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  margin-left: 0.3125rem;
+}
+
+input {
+  text-align: center;
+  width: 50%;
+}
+
+input[name='search'] {
+  width: 75%;
+}
+
+textarea {
+  vertical-align: middle;
+  width: 73.5%;
+}
+
+input:required,
+textarea:required {
+  border-color: #f00;
+}
+
+input[type='submit'] {
+  border-radius: 3px;
+  margin: 1rem;
+  outline: none;
+  transition: box-shadow 0.05s, transform 0.05s;
+  width: 25.7485rem;
+}
+
+input[type='submit']:hover {
+  box-shadow: 0px 6px 7px -4px rgb(105, 104, 104);
+  transform: translateY(-3px) scale(1.03);
+}
+
+input[type='submit']:active {
+  box-shadow: none;
+  transform: none;
+}
+
+/* FOOTER */
+footer {
+  align-items: center;
+  background-color: #000;
+  padding: 0.0625rem;
+  text-align: center;
+}
+
+footer li {
+  display: inline;
+  margin: 0 0.625rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:visited {
+  color: #777;
+}

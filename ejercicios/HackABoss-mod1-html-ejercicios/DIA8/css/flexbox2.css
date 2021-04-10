@@ -1,0 +1,32 @@
+.container-flex {
+    border: 3px solid orange;
+    display: flex;
+    resize: both;
+    overflow: auto;
+}
+
+.wrap {
+    /* flex-wrap: wrap; */
+}
+
+.direction {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    height: 100px;
+    /* width: 100px; */
+    background-color: green;
+    /* order: 0; */
+}
+
+.items:nth-child(even) {
+    background-color: purple;
+}
+#order {
+    background-color: pink;
+    order: -1;
+    transition: order 1s;
+}

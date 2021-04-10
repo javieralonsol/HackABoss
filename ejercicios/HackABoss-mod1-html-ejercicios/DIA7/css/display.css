@@ -1,0 +1,6 @@
+.block {
+    background: pink;
+    display: block;
+    margin: 50px;
+    padding: 50px;
+}

@@ -1,0 +1,103 @@
+/* comun */
+    div {
+        text-align: center;
+    }
+
+    .uno {
+        background-color: pink;
+    }
+
+    .dos {
+        background-color: orange;
+    }
+
+    .tres {
+        background-color: green;
+    }
+
+    .cuatro {
+        background-color: blue;
+    }
+
+/* primero */
+    .primero {
+        /* display: none; */
+        width: 500px;
+    }
+
+    .uno {
+        height: 200px;
+        width: 125px;
+        float: left;
+    }
+
+    .dos {
+        height: 100px;
+
+    }
+
+    .tres {
+        height: 100px;
+    }
+
+    .cuatro {
+        height: 75px;
+    }
+
+/* segundo */
+    .segundo {
+        display: flex;
+        flex-flow: row wrap;
+        height: 300px;
+        width: 500px;
+        justify-content: flex-end;
+    }
+    
+    .segundo .uno {
+        flex: 0 0 25%;
+        height: 75%;
+        width: 25%;    }
+    
+    .segundo .dos {
+        flex: 1 0 50%;
+        height: 37.5%;
+    }
+    
+    .segundo .tres {
+        flex: 0 0 75%;
+        height: 37.5%;
+        margin-top: -22.5%;
+    }
+    
+    .segundo .cuatro {
+        flex: 1 1 100%;
+        height: 25%;
+    }
+
+/* tercero */
+    .tercero {
+        width: 500px;
+        display: grid;
+        grid-template-areas:
+            "uno dos"
+            "uno tres"
+            "cuatro cuatro";
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 100px 100px 75px;
+        }
+
+    .uno {
+        grid-area: uno;
+    }
+
+    .dos {
+        grid-area: dos;
+    }
+
+    .tres {
+        grid-area: tres;
+    }
+
+    .cuatro {
+        grid-area: cuatro;
+    }

@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: lightseagreen;
+    height: 125px;
+    margin: 10px 10px 5px;
+    flex-basis: 100%;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.uno {
+    background-color: green;
+    height: 125px;
+    margin: 5px 10px;
+    flex-basis: 100%;
+}
+
+.dos {
+    background-color: red;
+    height: 330px;
+    margin: 5px 10px;
+    flex-basis: 100%;
+}
+
+.tres {
+    background-color: orange;
+    display: none;
+    flex-basis: 100%;
+    margin: 5px 10px;
+}
+
+@media (min-width: 350px) {
+    header {
+        height: 100px;
+    }
+
+    .uno {
+        height: 150px;
+    }
+
+    .dos {
+        height: 330px;
+        flex: 1 0 40%;
+        margin-right: 5px;
+    }
+
+    .tres {
+        height: 330px;
+        display: initial;
+        flex: 1 0 40%;
+        margin-left: 5px;
+    }
+
+    .dos 
+}
+
+@media (min-width: 700px) {
+    .uno {
+        flex: 1 0 auto;
+        height: 490px;
+        margin-right: 5px;
+    }
+
+    .dos {
+        flex: 3 0 auto;
+        height: 490px;
+        margin: 5px;
+    }
+    
+    .tres {
+        flex: 1 0 auto;
+        height: 490px;
+    }
+}

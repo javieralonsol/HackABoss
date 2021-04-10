@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form method="POST" action="my-server-url">
+        <div>
+            <label>
+                Nombre
+                <input type="text" name="nombre" id="nombre" />
+            </label>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" />
+        </div>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div>
+                <label>Color favorito</label>
+                <select name="color">
+                    <option value="green">verde</option>
+                    <option value="red">rojo</option>
+                    <option value="yellow">amarillo</option>
+                </select>
+            </div>
+           
+        </fieldset>
+        <label>
+            Comentarios
+            <textarea name="comentario" cols="24" rows="12">Teclea tu comentario</textarea>
+        </label>
+        <input type="submit" value="Enviar" />
+        <input type="reset" />
+    </form>
+</body>
+</html>

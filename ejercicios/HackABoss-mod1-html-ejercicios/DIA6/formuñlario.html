@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="formulario">
+            <h1>¿Quieres más información?</h1>
+            <h2>Contacta con nosotros para saber más información sobre los cursos o bootcamps de programación Full
+                stack.</h2>
+            <div class="minilinea"></div>
+            <form action="my-server">
+                <div>
+                    <div>
+                        <input name="nombre" type="text" placeholder="Nombre *" />
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input name="apellidos" type="text" placeholder="Apellidos *" />
+                    </div>
+                </div>
+                <div>
+                    <div class="ciudad">
+                        <input name="ciudad" type="text" placeholder="Ciudad *" />
+                    </div>
+                </div>
+                <div>
+                    <div class="telefono">
+                        <input name="telefono" type="text" placeholder="Teléfono *" />
+                    </div>
+                </div>
+                <div>
+                    <div class="email">
+                        <input name="email" type="text" placeholder="Email *" />
+                    </div>
+                </div>
+                <div>
+                    <div class="mensaje">
+                        <textarea name="mensaje" placeholder="Mensaje *" rows="5"></textarea>
+                    </div>
+                </div>
+                <div id="pru">
+                    <input type="checkbox" name="acepto" id="acepto" />
+                    <label for="acepto">
+                        Acepto la <a href="#">política de
+                            privacidad *</a>
+                    </label>
+                </div>
+                <input type="submit" value="Enviar"/>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

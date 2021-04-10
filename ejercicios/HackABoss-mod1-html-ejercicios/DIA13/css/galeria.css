@@ -1,0 +1,56 @@
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #000;
+    height: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: tomato;
+    height: calc(100vh - 100px);
+    flex: 0 0 200px;
+   /*  margin: 0 auto;
+    display: none;
+    flex: 1 0 20%; */
+    display: none;
+}
+
+section {
+    background-color: pink;
+    text-align: center;
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    /* max-width: 800px; */
+    flex: 1 1 100%;
+}
+
+section div {
+    height: 20px;
+}
+img {
+    display: inline-block;
+    max-width: 300px;
+    height: auto;
+}
+@media (min-width: 900px) {
+    nav {
+        display: block;
+    }
+    img {
+        display: inline-block;
+        min-width: 200px;
+        max-width: 33%;
+        height: auto;
+    }
+    
+}

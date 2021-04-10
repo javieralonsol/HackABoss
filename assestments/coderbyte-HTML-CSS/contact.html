@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HTML and CSS Assessment" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <title>HTML and CSS Assessment : Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Página personal</h1>
+        <h2>de Javier Alonso López</h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>
+        <img alt="Foto de Javier Alonso" height="150" src="media/javier_alonso.jpeg" width="150" />
+        <p>F Javier Alonso López</p>
+        <p>49 años</p>
+        <p>Culleredo (A Coruña)</p>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/javieralonsolopez/" rel="noreferrer" target="_blank" title="Linkedin"
+              ><img alt="Linkedin" src="media/linkedin.svg" height="25" width="25"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/francisco.javier.alonso.lopez.alias.oso/"
+              rel="noreferrer"
+              target="_blank"
+              title="Facebook"
+              ><img alt="Facebook" src="media/facebook.svg" height="25" width="25"
+            /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/JaviAliasOso" rel="noreferrer" target="_blank" title="Twitter"
+              ><img alt="Twitter" src="media/twitter.svg" height="25" width="25"
+            /></a>
+          </li>
+        </ul>
+      </aside>
+      <div>
+        <section>
+          <h1>Formulario de contacto</h1>
+          <form action="" method="GET">
+            <fieldset>
+              <legend>Datos personales</legend>
+              <label>Nombre: <input name="name" type="text" autofocus required /></label>
+              <label>Correo Electrónico: <input name="email" type="email" required /></label>
+              <label>Teléfono: <input name="tel" type="tel" /></label>
+              <label
+                >URL: <input name="url" type="url" placeholder="Escribe aquí la URL de tu página personal"
+              /></label>
+              <label>Color favorito: <input name="color" type="color" /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Datos numéricos</legend>
+              <label>Fecha: <input name="date" type="date" /> </label>
+              <label>Tiempo: <input name="time" type="time" /></label>
+              <label>Fecha y hora: <input name="datetime" type="datetime-local" /></label>
+              <label>Mes: <input name="month" type="month" /></label>
+              <label>Semana: <input name="week" type="week" /></label>
+              <label>Número: <input name="number" type="number" min="-10" max="10" /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Término de búsqueda</legend>
+              <label>Búsqueda: <input name="search" type="search" /></label>
+            </fieldset>
+            <fieldset>
+              <legend>Cuéntanos algo</legend>
+              <label>Mensaje: <textarea name="comments" cols="30" rows="5"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Enviar" />
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https://github.com/" rel="noreferrer" target="_blank">GitHub</a></li>
+        <li><a href="https://gitlab.com/" rel="noreferrer" target="_blank">GitLab</a></li>
+        <li><a href="https://www.codewars.com/" rel="noreferrer" target="_blank">CodeWars</a></li>
+        <li><a href="https://hackaboss.com/" rel="noreferrer" target="_blank">HackABoss</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

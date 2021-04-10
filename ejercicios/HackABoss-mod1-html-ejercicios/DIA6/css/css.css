@@ -1,0 +1,95 @@
+/* div {
+    margin: 20px 0;
+}
+
+#boton {
+    background-color: rgb(40, 50, 125);
+    border-radius: 5px;
+    border: 0;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 12px;
+    transition: background-color.2s, transform .5s, word-spacing .5s, letter-spacing .5s;
+}
+
+#boton:hover,
+#enlace:hover {
+    background-color: rgb(48, 110, 224);
+    transform: scale(1.05);
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+#enlace {
+    background-color: #4CAF50;
+    color: #fff;
+    display: inline-block;
+    padding: 13px;
+    text-decoration: none;
+    transition: background-color.5s, transform .5s, word-spacing .5s, letter-spacing .5s;
+    text-decoration: wavy;
+    white-space: nowrap;
+}
+
+#enlace::after {
+    content: ">>";
+}
+
+
+    #tabla {
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    #tabla caption {
+        background-color: rgb(241, 146, 167);
+    }
+
+    #tabla th {
+        background-color: rgb(252, 232, 143);
+    }
+
+    #tabla th, #tabla td {
+        border: 1px solid #000;
+        text-align: center;
+    }
+
+    #tabla tbody tr:nth-child(2n+2) {
+        background-color: rgb(148, 142, 142);
+    } */
+
+/* GitHub */
+
+#github {
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 200px;
+}
+
+#github img {
+    border-radius: 10px;
+}
+
+.articulo {
+    padding: 0 20px 20px;
+}
+
+#github h1 {
+    font-size: 19px;
+    color: #333;
+}
+
+#github a {
+    color: #000;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#github a::after {
+    content: " >>";
+}
+
+#github footer {
+    border-top: 1px solid #000;
+    font-size: 13px;
+    padding: 20px;
+}

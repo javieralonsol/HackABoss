@@ -1,0 +1,33 @@
+@keyframes rotar {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    text-align: center;
+}
+
+.container {
+    background-color: tomato;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    background-color:aqua;
+    border-radius: 10px;
+
+    animation-name: rotar;
+    animation-duration: .01s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

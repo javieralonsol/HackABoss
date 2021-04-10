@@ -1,0 +1,38 @@
+.warning {
+    background-color: orange;
+}
+
+.error {
+    background-color: red;
+}
+
+.border {
+    /* border: 1px solid blue; */
+    border-radius: 8px;
+}
+
+#principal {
+    text-align: center;
+}
+
+[href] {
+    background-color: pink;
+}
+
+[href*="b."] {
+    background-color: green;
+    cursor: crosshair;
+}
+
+div:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+a:hover {
+    background-color: navy;
+}
+
+p::first-letter {
+    color: tomato;
+    font-size: 30px;
+}
