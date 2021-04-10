@@ -1,2 +1,2 @@
 # HackABoss
-[Ejercicios](https://github.com/javieralonsol/HackABoss/ejercicios), [assesments](https://github.com/javieralonsol/HackABoss/assesments) y [proyecto final (Helpium)](https://github.com/javieralonsol/HackABoss/proyecto) del [bootcamp de programación de Hack a Boss](https://hackaboss.com/)
+[Ejercicios](https://github.com/javieralonsol/HackABoss/tree/master/ejercicios), [assesments](https://github.com/javieralonsol/HackABoss/tree/master/assestments) y [proyecto final (Helpium: "Portal de necesidades digitales")](https://github.com/javieralonsol/HackABoss/tree/master/proyecto-portal-necesidades-digitales) del [bootcamp de programación de Hack a Boss](https://hackaboss.com/)
