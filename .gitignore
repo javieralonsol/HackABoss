@@ -1,6 +1,8 @@
 .env
+.gitignore
 .prettierrc
 .vscode
+*.pem
 *🚫*
 access.log
 node_modules/

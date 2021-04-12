@@ -27,7 +27,7 @@
 | **`GET`** | ✅ | `/api/v1/services/:category` | `serviceGetAllByCategory ` | `Obtener los servicios de una categoría` |
 | **`GET`** | ❗ | `/api/v1/services/user` | `serviceGetAllOfUser ` | `Obtener los servicios del usuario logueado` |
 | **`POST`** | ❗ | `/api/v1/services` | `serviceCreate ` | `Insertar un nuevo servicio` |
-| **`PATCH`** | 🚫 | `/api/v1/services/:id` | `ServiceUpdateById ` | `Actualizar un servicio` |
+| **`PATCH`** | ❗ | `/api/v1/services/:id` | `ServiceUpdateById ` | `Actualizar un servicio` |
 | **`DELETE`** | 🚫 | `/api/v1/services/:id` | `serviceToggleVisibilityBiId` | `Oculta o muestra un servicio` |
 
 ## Responses

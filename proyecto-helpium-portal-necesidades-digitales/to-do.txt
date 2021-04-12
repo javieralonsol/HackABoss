@@ -1,13 +1,7 @@
-Cambiado:
-  !!!service-update-by-id.js ahora es private, no admin. Hay que cambiarlo en README.md
-
 Pendiente:
-  poner bonito el email de verificación ¿con un archivo externo?
   añadir url a profile de user (y SQL)
   filtrar al mostrar u ocultar y que los muestre sólo todos al admin
   hacer adminCreateServicesFromTodoespertos
-  Al crear la cuenta crear una img con las dos iniciales y eliminar la clave de SQL
-  permitir archivos de imagen
   ¿renovar el token?
   ¿poner el tiempo del token en el .env?
   bajar el mínimo de comentario
