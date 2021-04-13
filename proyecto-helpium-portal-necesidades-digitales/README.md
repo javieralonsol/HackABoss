@@ -1,8 +1,14 @@
-# HELPIUM ENDPOINTS
+
+# HELPIUM
+
+Marzo de 2020.
+Proyecto final del [bootcamp de HackABoss]() realizado por [Irene Medín](https://www.linkedin.com/in/irene-med%C3%ADn-blanco/) y [Javier Alonso](https://www.linkedin.com/in/javieralonsolopez/)
+
+## BACK ENDPOINTS
 
 ##### <code>Legend: ✅ Public, ❗ Private, 🚫 Admin</code>
 
-## Users
+### Users
 
 |Method|Auth|Route|Controller|Description|
 |---|:---:|---|---|---|
@@ -18,7 +24,7 @@
 | **`DELETE`** | ❗ | `/api/v1/users/upload` | `userDeleteImageProfile ` | `Borrar la imagen del perfil` |
 | **`DELETE`** | 🚫 | `/api/v1/users/:idUser` | `userToggleVisibilityById` | `Oculta o muestra un usuario` |
 
-## Services
+### Services
 
 |Method|Auth|Route|Controller|Description|
 |---|:---:|---|---|---|
@@ -30,7 +36,7 @@
 | **`PATCH`** | ❗ | `/api/v1/services/:id` | `ServiceUpdateById ` | `Actualizar un servicio` |
 | **`DELETE`** | 🚫 | `/api/v1/services/:id` | `serviceToggleVisibilityBiId` | `Oculta o muestra un servicio` |
 
-## Responses
+### Responses
 
 |Method|Auth|Route|Controller|Description|
 |---|:---:|---|---|---|
@@ -40,7 +46,7 @@
 | **`PUT`** | ❗ | `/api/v1/solution/:id` | `solutionSetChosenSolution ` | `Asignar una solution como "elegida"` |
 | **`DELETE`** | 🚫 | `/api/v1/solution/:id` | `solutionToggleVisibilityById` | `Oculta o muestra una solución` |
 
-## Admin
+### Admin
 
 |Method|Auth|Route|Controller|Description|
 |---|:---:|---|---|---|
